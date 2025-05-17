@@ -68,6 +68,21 @@ h1, h2 \{\
   <p>Published on Mar 3, 2024 — A brief summary or intro of your article.</p>
 </div>
 
+ .post-card {
+  width: 30%;
+  float: left;
+  margin: 1%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background: #fff;
+  transition: transform 0.2s ease;
+}
+.post-card:hover {
+  transform: translateY(-5px);
+}
+
+
 footer \{\
   background: #222;\
   color: #fff;\
