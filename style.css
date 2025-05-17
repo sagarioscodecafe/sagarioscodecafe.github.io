@@ -61,6 +61,13 @@ h1, h2 \{\
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);\
 \}\
 \
+
+ <div class="post-card">
+  <img src="https://miro.medium.com/v2/resize:fit:1200/1*abcXYZ.jpeg" alt="Article Image">
+  <h3><a href="https://medium.com/@sagarkale/article-title-link">Article Title</a></h3>
+  <p>Published on Mar 3, 2024 — A brief summary or intro of your article.</p>
+</div>
+
 footer \{\
   background: #222;\
   color: #fff;\
