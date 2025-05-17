@@ -120,6 +120,27 @@
     </div>
   </section>
 
+
+  <section id="medium-articles"></section>
+
+<script>
+  fetch("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40sagarkaleforapple")
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById("medium-articles");
+      data.items.slice(0, 3).forEach(item => {
+        container.innerHTML += `
+          <div style="margin-bottom: 20px;">
+            <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
+            <p>${item.pubDate.split(' ')[0]} — ${item.author}</p>
+            <p>${item.description.substring(0, 150)}...</p>
+          </div>
+        `;
+      });
+    });
+</script>
+
+
   <section>
     <h2>Contact</h2>
     <p>Email: <a href="mailto:sagarkaleforapple@gmail.com">sagarkaleforapple@gmail.com</a></p>
